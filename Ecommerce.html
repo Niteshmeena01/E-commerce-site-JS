@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Ecommerce site </title>
+    <style>
+    body{
+        margin:0px;
+        padding:0px;
+    }
+    .navbar{
+        width:100%;
+        height:10vh;
+        background-color:cadetblue;
+        border:2px solid orangered;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    .navbar a{
+        color:white;
+        text-decoration:none;
+
+    }
+    .navbar a:hover{
+        color: orangered;
+    }
+
+    .navbar input{
+        width:25%;
+        height:30px;
+        border-radius:20px;
+    }
+    .navbar a i{
+        font-size:20px;
+    }
+    @media screen and (max-width:792px){
+        .navbar {
+            font-size:10%;
+        }
+    }
+    .items{
+        width:100%;
+        height: auto;
+        background-color: black;
+        display: grid;
+        grid-template-columns:repeat(auto-fill,minmax(400px,1fr));
+        grid-gap:20px;
+        grid-auto-rows:400px;
+    padding-top:60px;
+     padding-bottom:60px;}
+    .boxes{
+        background-color: white;
+        border:1px solid red;
+        border-radius:10px;
+        padding:20px;
+    }
+    .items i{
+        font-size:30px;
+
+    }
+    .boxes i:hover{
+        color: red;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="navbar">
+            <a href="">HOME</a>
+            <a href="">ABOUT</a>
+            <a href="">CONTACT US</a>
+            <input type="text" placeholder="search item" id="input">
+             <a href="" id="like"><i class="fa-regular fa-heart"></i></a>
+             <a href="" id="cart"><i class="fa-solid fa-cart-shopping"></i></a> 
+    </div>
+
+    <div class="items">
+        <div class="boxes" id="item">
+            <i class="fa-regular fa-heart"></i>
+            <br>
+            <center>
+                <img src="./1-mix-dryfruits-mix-of-11-dryfruits-nuts-and-berriers-1kg-1-original-imaggzg7wuaaf96r.webp" alt="" width="150px">
+            </center>
+            <h5>PRODUCT NAME : MIX DRY FRUIT </h5>
+            <h5>QUANTITY : 500grm </h5>
+            <h5>PRICE : 750RS </h5> 
+            
+        </div>
+        <div class="boxes" id="item">
+            <i class="fa-regular fa-heart"></i>
+            <br>
+            <center>
+                <img src="./40235864_1-don-monte-american-mix-dry-fruits-vitamins-minerals-fibre-rich-assorted-healthy-nuts.webp" alt="" width="200px">
+            </center>
+            <h5>PRODUCT NAME : AMERICAN DRY FRUITS </h5>
+            <h5>QUANTITY : 500grm </h5>
+            <h5>PRICE : 900RS </h5>
+        </div>
+        <div class="boxes" id="item">
+          <i class="fa-regular fa-heart"></i>
+            <br>
+            <center>
+                <img src="./7-Dry-Fruit-Powder-For-Kids-8cm-X-11-cm-Product-Pic_1-1.jpg" alt="" width="200px">
+            </center>
+            <h5>PRODUCT NAME : DRY FRUIT POWDER</h5>
+            <h5>QUANTITY : 500grm </h5>
+            <h5>PRICE : 500RS </h5>
+        </div>
+        <div class="boxes" id="item">
+          <i class="fa-regular fa-heart"></i>
+            <br>
+            <center>
+                <img src="./Hallagulla-600x600.jpg" alt="" width="200px">
+            </center>
+            <h5>PRODUCT NAME : HALLA GULLA MIX</h5>
+            <h5>QUANTITY : 500grm </h5>
+            <h5>PRICE : 700RS </h5>
+        </div>
+        <div class="boxes" id="item">
+          <i class="fa-regular fa-heart"></i>
+            <br>
+            <center>
+                <img src="./image-251.png" alt="" width="240px">
+            </center>
+            <h5>PRODUCT NAME : WALNUTS </h5>
+            <h5>QUANTITY : 500grm </h5>
+            <h5>PRICE : 600RS </h5>
+        </div>
+        <div class="boxes" id="item"> 
+          <i class="fa-regular fa-heart"></i>
+            <br>
+            <center>
+                <img src="./vsd-100-natural-california-almonds-badam-dryfruit-250g-single-pack-product-images-orvfmty4lrq-p601216423-1-202305061305.webp" alt="" width="200px">
+            </center>
+            <h5>PRODUCT NAME : ALMONDS </h5>
+            <h5>QUANTITY : 500grm </h5>
+            <h5>PRICE : 650RS </h5>
+        </div>
+    </div>
+        
+ 
+    <script src="./Ecommerce.js"></script>
+</body>
+</html>
