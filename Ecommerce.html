@@ -90,8 +90,36 @@
         grid-template-columns:repeat(2,80% 20%);
     
     }
+    .new1{
+        margin-top:5%;
+    }
     .new1 img{
-           width:50px;
+           width:5rem;
+           margin-top:2%;
+           margin-left:40%;
+
+           
+    }
+
+    .new1 button{
+        background-color: black;
+        color:white;
+        border:1px solid white;
+        width:30px;
+        margin-left:5px;
+        margin-top:5px;
+        border-radius:5px;
+    }
+    .new1 span{
+        margin-left:5px;
+    }
+    #delete{
+        margin-left:40%;
+        width:60px;
+        border-radius:10px;
+    }
+    #remove{
+        display: none;
     }
     </style>
 </head>
@@ -130,53 +158,45 @@
             </div>
             <div class="boxes" id="item3">
               <i class="fa-regular fa-heart"></i>
-                <br>
-                <br>
                 <center>
                     <img src="./7-Dry-Fruit-Powder-For-Kids-8cm-X-11-cm-Product-Pic_1-1.jpg" alt="" width="120px">
                 </center>
                 <h5>PRODUCT NAME : DRY FRUIT POWDER</h5>
                 <h5>QUANTITY : 500grm </h5>
                 <h5>PRICE : 500RS </h5>
-                <button >Add to Cart</button>
+                <button onclick="addTocart(item3)">Add to Cart</button>
                
             </div>
             
              <div class="boxes" id="item4">
               <i class="fa-regular fa-heart"></i>
-                <br>
-                <br>
                 <center>
                     <img src="./Hallagulla-600x600.jpg" alt="" width="120px">
                 </center>
                 <h5>PRODUCT NAME : HALLA GULLA MIX</h5>
                 <h5>QUANTITY : 500grm </h5>
                 <h5>PRICE : 700RS </h5>
-                <button>Add to Cart</button>
+                <button onclick="addTocart(item4)">Add to Cart</button>
             </div>
             <div class="boxes" id="item5">
               <i class="fa-regular fa-heart"></i>
-                <br>
-                <br>
                 <center>
                     <img src="./image-251.png" alt="" width="120px">
                 </center>
                 <h5>PRODUCT NAME : WALNUTS </h5>
                 <h5>QUANTITY : 500grm </h5>
                 <h5>PRICE : 600RS </h5>
-                <button>Add to Cart</button>
+                <button onclick="addTocart(item5)">Add to Cart</button>
             </div>
             <div class="boxes" id="item6"> 
               <i class="fa-regular fa-heart"></i>
-                <br>
-                <br>
                 <center>
                     <img src="./vsd-100-natural-california-almonds-badam-dryfruit-250g-single-pack-product-images-orvfmty4lrq-p601216423-1-202305061305.webp" alt="" width="100px">
                 </center>
                 <h5>PRODUCT NAME : ALMONDS </h5>
                 <h5>QUANTITY : 500grm </h5>
                 <h5>PRICE : 650RS </h5>
-                <button >Add to Cart</button>
+                <button onclick="addTocart(item6)">Add to Cart</button>
             </div>
           </div>
   
