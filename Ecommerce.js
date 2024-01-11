@@ -6,15 +6,9 @@ function addTocart(item){
    selectItem.classList.add('new1');
    selectItem.setAttribute('id',addItem);
    var img = document.createElement('img')
-   img.setAttribute('src',item.children[0].currentSrc);
-   console.log(img);
+   img.setAttribute('src',item.querySelector('img').currentSrc);
    var cartItems = document.getElementById('title')
    selectItem.appendChild(img)
-   cartItems.appendChild(selectItem);
-   
-
-     
-
-    
+   cartItems.appendChild(selectItem);  
 }
 
